@@ -1,0 +1,11 @@
+--- origsrc/raqm-0.5.0/src/Makefile.am	2018-02-10 09:59:42.000000000 -0500
++++ src/raqm-0.5.0/src/Makefile.am	2018-11-10 11:24:22.168466000 -0500
+@@ -27,7 +27,7 @@ libraqm_la_CPPFLAGS = \
+     $(NULL)
+ 
+ libraqm_la_LDFLAGS = \
+-    -version-info $(RAQM_LIBTOOL_VERSION) \
++    -version-info $(RAQM_LIBTOOL_VERSION) -no-undefined \
+     $(NULL)
+ 
+ libraqm_test_la_SOURCES = $(libraqm_la_SOURCES)

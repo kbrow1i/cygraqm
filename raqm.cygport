@@ -1,0 +1,25 @@
+NAME="raqm"
+VERSION=0.5.0
+RELEASE=1
+
+HOMEPAGE="https://github.com/HOST-Oman/libraqm"
+CATEGORY="Libs"
+SUMMARY="A library for complex text layout"
+DESCRIPTION="Raqm is a small library that encapsulates the logic for complex text
+layout and provide a convenient API."
+
+SRC_URI="${HOMEPAGE}/releases/download/v${VERSION}/raqm-${VERSION}.tar.gz"
+
+PATCH_URI="no_undefined.patch"
+
+DEPEND="libfreetype-devel libharfbuzz-devel libfribidi-devel gtk-doc"
+
+PKG_NAMES="libraqm0 libraqm-devel"
+
+libraqm0_SUMMARY="${SUMMARY} (runtime)"
+libraqm0_CONTENTS="usr/bin/cygraqm-0.dll usr/share/doc"
+
+libraqm_devel_SUMMARY="${SUMMARY} (development)"
+libraqm_devel_CONTENTS="usr/include usr/lib usr/share/gtk-doc"
+
+CYGCONF_ARGS="--enable-gtk-doc"
