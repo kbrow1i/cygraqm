@@ -14,12 +14,15 @@ PATCH_URI="no_undefined.patch"
 
 DEPEND="libfreetype-devel libharfbuzz-devel libfribidi-devel gtk-doc"
 
-PKG_NAMES="libraqm0 libraqm-devel"
+PKG_NAMES="libraqm0 libraqm-devel raqm-doc"
 
 libraqm0_SUMMARY="${SUMMARY} (runtime)"
 libraqm0_CONTENTS="usr/bin/cygraqm-0.dll usr/share/doc"
 
 libraqm_devel_SUMMARY="${SUMMARY} (development)"
-libraqm_devel_CONTENTS="usr/include usr/lib usr/share/gtk-doc"
+libraqm_devel_CONTENTS="usr/include usr/lib"
+
+raqm_doc_SUMMARY="${SUMMARY} (documentation)"
+raqm_doc_CONTENTS="usr/share/gtk-doc"
 
 CYGCONF_ARGS="--enable-gtk-doc"
