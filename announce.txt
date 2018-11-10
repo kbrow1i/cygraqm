@@ -1,0 +1,15 @@
+Subject: raqm 0.5.0-1
+
+The following packages have been uploaded to the Cygwin distribution:
+
+* libraqm0-0.5.0-1
+* libraqm-devel-0.5.0-1
+* raqm-doc-0.5.0-1
+
+Raqm is a small library that encapsulates the logic for complex text
+layout and provide a convenient API.
+
+This is a new Cygwin package.
+
+Ken Brown
+Cygwin's Raqm maintainer
